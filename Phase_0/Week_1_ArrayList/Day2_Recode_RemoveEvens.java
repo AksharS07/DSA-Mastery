@@ -18,6 +18,6 @@ public class Day2_Recode_RemoveEvens{
                 System.out.println(number);
                 
             }
-        
+        sc.close();
     }
 }

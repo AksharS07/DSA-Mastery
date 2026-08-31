@@ -1,0 +1,43 @@
+//Day 10
+//Challenge 1
+// Create your HashMap<String, Integer>, use .put() to add four people, use .remove("Name") to delete one, and then print the map. 
+import java.util.*;
+class Main {
+    public static void main(String[] args){
+        HashMap<String, Integer> maps = new HashMap<>();
+        maps.put("Akshar",1);
+        maps.put("Veera",2);
+        maps.put("Sneha",3);
+        maps.put("Monica",4);
+        maps.remove("Veera");
+        System.out.println(maps);
+    }
+}
+// Challenge 2
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        HashMap<String, ArrayList<Integer>> gradeBook = new HashMap<>();
+        ArrayList<Integer> aksharScores = new ArrayList<>();
+        ArrayList<Integer> rohanScores = new ArrayList<>();
+        ArrayList<Integer> priyaScores = new ArrayList<>();
+        aksharScores.add(80);
+        aksharScores.add(85);
+        aksharScores.add(87);
+        rohanScores.add(89);
+        rohanScores.add(92);
+        rohanScores.add(90);
+        priyaScores.add(75);
+        priyaScores.add(100);
+        priyaScores.add(89);
+        gradeBook.put(aksharScores);
+        gradeBook.put(rohanScores);
+        gradeBook.put(priyaScores);
+        for(Map.Entry<String,Integer> entry : gradeBook.entrySet())//had to see the picture
+            {
+                int total = 0;
+                entry.getValue();
+                for()
+        }
+    }
+}

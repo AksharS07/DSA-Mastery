@@ -1,0 +1,82 @@
+Problem 1: The Cargo Hold
+You are managing a starship's cargo inventory for a planetary expedition.
+
+    Create an ArrayList of strings called cargo.
+
+    Add these exact initial items: "Warp Hypercore", "Tritium", "Carbon", "Ferrite Dust", "Tritium".
+
+    Write the logic to search the list for all instances of "Tritium" and replace them with "Di-hydrogen".
+
+    Remove the item sitting at the very last index of the list.
+
+    Print the final cargo list using a standard forward for loop.
+
+    import java.util.ArrayList;
+    import java.util.Collections;
+    class Main{
+        public static void main(String[] args){
+            ArrayList<String> cargo = new ArrayList<>();
+            cargo.add("Warp Hypercore");
+            cargo.add("Tritium");
+            cargo.add("Carbon");
+            cargo.add("Ferrite Dust");
+            cargo.add("Tritium");
+            for(int i= cargo.size()-1;i>=0;i--){
+                if(cargo.get(i).equals("Tritium"))
+                {
+                    cargo.set(i,"Di-hydrogen");
+                }
+            }
+
+            cargo.remove(cargo.size()-1);
+        for(int i=0;i<=cargo.size()-1;i++){
+            System.out.println(cargo.get(i));
+        }
+
+        }
+    }
+
+
+
+
+
+Problem 2: The Ghat Route Logger
+You are logging the continuous distances (in kilometers) between stops on a long-distance Honda Activa 125 ride through the Agumbe and Charmadi ghats.
+
+    Create an ArrayList of integers called routeLog.
+
+    Add these distance stretches: 45, 112, 30, 85, 12, 60.
+
+    Write the logic to calculate and print the total combined distance of the ride.
+
+    Write the logic to remove any individual stretch that is strictly less than 50 km.
+
+    Print the updated list showing only the long-distance stretches remaining.
+
+    import java.util.*;
+    class Main{
+        public static void main(String[] args){
+            ArrayList<Integer> routeLog = new ArrayList<>();
+            routeLog.add(45);
+            routeLog.add(112);
+            routeLog.add(30);
+            routeLog.add(85);
+            routeLog.add(12);
+            routeLog.add(60);
+            int total =0;
+            for(int i=0;i<=routeLog.size()-1;i++){
+                total = total + routeLog.get(i) ;
+            }
+            System.out.println("Total distance combined: "+total);
+            for(int i=routeLog.size()-1;i>=0;i--){
+                if(routeLog.get(i)<50)
+                {
+                    routeLog.remove(i);
+                }
+            }
+            System.out.println("Long Distance stretches");
+            for(Integer longroute : routeLog){
+                System.out.println(longroute);
+            }
+        }
+    }

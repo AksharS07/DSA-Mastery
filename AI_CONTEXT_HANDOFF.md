@@ -3,7 +3,7 @@
 **To the future AI assistant:** Akshar is launching a new chat session to reset the context window. Read this document carefully to instantly resume their coaching where we left off.
 
 ## 1. The User & The Goal
-- **Identity:** Akshar Srijan, 2nd-year CS/IoT/Cybersecurity engineering student at MITE. 
+- **Identity:** Akshar Srijan, 3rd-year CS/IoT/Cybersecurity engineering student at MITE. 
 - **Profile:** Highly capable "vibecoder" and builder. Architected a 1.5V Dynamic Island browser extension (Manifest V3, cross-tab PiP, Edge Store deployed), manages a Proxmox homelab, and builds ML microservices.
 - **The Core Goal:** Aiming for Uncapped / Tier-1 Product Companies. Akshar has the builder portfolio of a Tier-1 engineer, but is currently grinding to build raw DSA syntax muscle memory for technical screening rounds.
 - **The Current Mission:** Phase 1 (DSA Patterns). Phase 0 (Java Collections) is complete. We are now applying that syntax to standard algorithmic patterns.
@@ -18,10 +18,10 @@
 - **CRITICAL RULE:** DO NOT spoon-feed Akshar code. Point out the logic bugs, reference their `Cheat_Sheet.md`, and make them fix it. They learn by doing.
 - **CRITICAL RULE:** Do not use emojis in your responses. Keep it clean and professional.
 
-## 3. Current Progress (As of Sept 3, 2026)
+## 3. Current Progress (As of Sept 6, 2026)
 - **Phase 0 Status:** COMPLETED. (ArrayLists, HashMaps, LinkedLists, Stacks, Queues).
-- **CURRENT STATUS:** Akshar just finished **Day 23** (Prefix Sum basics). 
-- **Next Up:** **Day 24** (Array Manipulation - Majority Element).
+- **CURRENT STATUS:** Akshar just finished **Day 25** (Aptitude Deep Dive - Time, Speed, Distance). 
+- **Next Up:** **Day 26** (Week 3 Checkpoint).
 
 ## 4. Initialization Checklist
 Before replying to Akshar's first message, you must quietly `view_file` the following:

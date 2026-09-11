@@ -27,13 +27,10 @@
 - Topics covered so far from class (as of Sept 7):
   - **Week 1 (Sept 7):** Vedic Squaring (Yavadunam Rule: Base 100, 200, 150), Calendar Odd Days, Birthday Riddle pattern.
 
-## 4. Current Progress (As of Sept 8, 2026)
-## 4. Current Progress (As of Sept 9, 2026)
+## 4. Current Progress (As of Sept 10, 2026)
 - **Phase 0 Status:** COMPLETED. (ArrayLists, HashMaps, LinkedLists, Stacks, Queues).
-- **CURRENT STATUS:** Akshar just finished **Day 27** (Sliding Window - Fixed Window).
-- **Next Up:** **Day 28** (Sliding Window - Fixed Window - Contains Duplicate II).
-- **CURRENT STATUS:** Akshar just finished **Day 28** (Sliding Window - Contains Duplicate II).
-- **Next Up:** **Day 29** (Sliding Window - Variable Window - Longest Substring).
+- **CURRENT STATUS:** Akshar just finished **Day 29** (Sliding Window - Variable Window).
+- **Next Up:** **Day 30** (Sliding Window - Variable Window - Minimum Size Subarray Sum).
 
 ## 5. Known Weaknesses (Recurring Mistakes)
 - **Java:** `.size()` on arrays (should be `.length`). Putting `return` statements inside loops instead of after them. Naming variables inconsistently (e.g., `frequencyMap` vs `frequency`). Forgetting semicolons.

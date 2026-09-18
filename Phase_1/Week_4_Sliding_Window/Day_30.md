@@ -1,7 +1,7 @@
 # Day 30: Variable Sliding Window (Minimum Size Subarray Sum)
 **Date:** 2026-09-11
 **Start Time:** *8:29 PM*
-**End Time:** 
+**End Time:** *6:22 AM*
 
 ---
 
@@ -13,7 +13,14 @@
 ```java
 class Solution {
     public int findTarget(int[] nums, int target) {
-        
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nums[i]==target)
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 }
 ```
@@ -27,7 +34,11 @@ Akshar drives to work at 30 km/hr and reaches 10 minutes late. The next day, he 
 
 **Your Working:**
 ```text
-
+so first
+30*40/40-30 = 120
+now the time gap is 15mins so 15/60=0.25hrs 
+0.25*120 = 30KM
+so the distance is 30KM
 ```
 
 ---
@@ -62,7 +73,25 @@ Yesterday we used a "rubber band" window to find the *longest* valid string. Tod
 ```java
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
-        
+        int left=0;
+        int currentSum=0;
+        int minLength = Integer.MAX_VALUE;
+        for(int right=0;right<nums.length;right++){
+            currentSum = currentSum + nums[right];
+            while(currentSum>=target)
+            {
+                minLength = Math.min(minLength, right - left +1);
+                currentSum = currentSum - nums[left];
+                left++;
+            }
+        }
+        if(minLength==Integer.MAX_VALUE)
+        {
+            return 0;
+        }
+        else{
+            return minLength;
+        }
     }
 }
 ```
@@ -70,8 +99,9 @@ class Solution {
 ---
 
 ## AI Feedback & Corrections
-- **SRS:** 
-- **Aptitude:** 
-- **DSA:** 
+- **SRS:** Perfect. You kept the `return -1;` strictly outside the loop. The "Early Return Trap" is officially conquered.
+- **Aptitude:** Flawless execution. You recognized that the formula required hours, converted 15 mins to 0.25 hrs, and found the correct 30km distance.
+- **DSA:** The algorithmic structure (the `for` loop expanding the window, and the nested `while` loop shrinking the window) was coded flawlessly. Your only error was writing `return int[] minLength;` at the end instead of just `return minLength;` (it's just a number, not an array!). 
 
-**Final Verdict:** 
+**Final Verdict:** You successfully coded the Variable Sliding Window (Minimum variant) without a single structural error. 
+

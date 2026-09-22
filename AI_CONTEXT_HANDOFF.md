@@ -1,46 +1,109 @@
 # AI Context Handoff for Akshar Srijan
 
-**To the future AI assistant:** Akshar is launching a new chat session to reset the context window. Read this document carefully to instantly resume their coaching where we left off.
+**To the future AI assistant:** Akshar is launching a new chat session to reset the context window. Read this document FIRST before doing anything.
 
-## 1. The User & The Goal
-- **Identity:** Akshar Srijan, 3rd-year CS/IoT/Cybersecurity engineering student at MITE.
-- **Profile:** Highly capable "vibecoder" and builder. Architected a 1.5V Dynamic Island browser extension (Manifest V3, cross-tab PiP, Edge Store deployed), manages a Proxmox homelab, and builds ML microservices.
-- **The Core Goal:** Aiming for Uncapped / Tier-1 Product Companies. Akshar has the builder portfolio of a Tier-1 engineer, but is currently grinding to build raw DSA syntax muscle memory for technical screening rounds.
-- **The Current Mission:** Phase 1 (DSA Patterns). Phase 0 (Java Collections) is complete. We are now applying that syntax to standard algorithmic patterns.
+---
 
-## 2. The Workflow & Persona
-- **Coding Environment:** VS Code workspace at `/mnt/Storage/VS Code/WORKS/DSA-Mastery`. Akshar codes everything locally inside VS Code.
-- **Tracking Hub:** Obsidian Vault at `/mnt/Storage/Obsidian Vault/DSA/`. You MUST read `Index.md` at the start of any session to know what day it is.
-- **The Loop:**
-  1. [00:00 - 00:10] SRS Warm-Up (10 mins Java syntax drill).
-  2. [00:10 - 00:40] Aptitude Block (30 mins Quants/Math without calculator).
-  3. [00:40 - 01:25] DSA Patterns (45 mins algorithmic problem solving).
-- **CRITICAL RULE:** DO NOT spoon-feed Akshar code. Point out the logic bugs, reference their `Cheat_Sheet.md`, and make them fix it. They learn by doing.
-- **CRITICAL RULE:** Do not use emojis in your responses. Keep it clean and professional.
-- **CRITICAL RULE:** When creating a new Day file, stamp the Start Time automatically from the current local time. Do NOT leave it blank. Also stamp the End Time when the session wraps up.
+## 1. CRITICAL — READ THESE FILES EVERY SESSION
 
-## 3. College Aptitude Class (Monday, Parallel Track)
-- Akshar has a **dedicated 2-hour Aptitude class every Monday** at college.
-- The instructor teaches a **new topic every week** (based on company placement trends from seniors). He does NOT revisit old topics — that is Akshar's responsibility to self-practice.
-- **The role of daily Aptitude blocks (Tue–Sun):** Drill and practice the topic introduced in Monday's class until it is automatic. The class introduces; we consolidate.
-- Topics covered in class are logged in `Quants_Formulas.md` the same day by the AI.
-- Topics covered so far from class (as of Sept 7):
-  - **Week 1 (Sept 7):** Vedic Squaring (Yavadunam Rule: Base 100, 200, 150), Calendar Odd Days, Birthday Riddle pattern.
+1. `/mnt/Storage/Obsidian Vault/DSA/GEMINI.md` — Rules you MUST follow. No exceptions.
+2. This file (`AI_CONTEXT_HANDOFF.md`) — Current state and progress.
+3. The roadmap artifact referenced below — Master plan.
 
-## 4. Current Progress (As of Sept 14, 2026)
-- **Phase 0 Status:** COMPLETED. (ArrayLists, HashMaps, LinkedLists, Stacks, Queues).
-- **CURRENT STATUS:** Akshar just finished **Day 33** (Week 4 Checkpoint).
-- **Next Up:** **Day 34** (LinkedList - Reverse a Linked List).
+---
 
-## 5. Known Weaknesses (Recurring Mistakes)
-- **Java:** `.size()` on arrays (should be `.length`). Putting `return` statements inside loops instead of after them. Naming variables inconsistently (e.g., `frequencyMap` vs `frequency`). Forgetting semicolons.
-- **Aptitude:** Calculating profit % on Selling Price instead of Cost Price. Forgetting to convert minutes to hours before using TSD formulas. Not converting km/hr to m/s before using train/distance formulas.
+## 2. The User & The Goal
 
-## 6. Initialization Checklist
-Before replying to Akshar's first message, you must quietly `view_file` the following:
-1. `/mnt/Storage/Obsidian Vault/DSA/00_Dashboard/Index.md` (To know the current day).
-2. `/mnt/Storage/Obsidian Vault/DSA/01_Phase_0_Core_Java/Cheat Sheet.md` (To know their exact syntax weaknesses).
-3. `/mnt/Storage/Obsidian Vault/DSA/04_Aptitude/Quants_Formulas.md` (To know their math traps and what the Monday class already covered).
-4. `/mnt/Storage/Obsidian Vault/DSA/02_Phase_1_Patterns/Phase_1_Roadmap.md` (To know what problem to assign next).
+- **Identity:** Akshar Srijan, 5th semester CS/IoT/Cybersecurity at MITE.
+- **Profile:** Builder (Proxmox homelab, ML microservices, browser extensions). Strong on projects, weak on raw coding from scratch.
+- **Goal:** Clear coding rounds at tier 2-3 companies (TCS Digital, Infosys PP, Cognizant, etc.). Placements possibly start 6th sem (March 2027), definitely by 7th sem (August 2027).
+- **Secondary Goal:** Enough Java fluency to build projects independently.
 
-Once you have read those, greet Akshar and tell them what day is next on the roadmap.
+---
+
+## 3. STRATEGY OVERHAUL (September 20, 2026)
+
+### What happened:
+- Days 1-35 were done in Markdown files. Code was never compiled or run.
+- A live coding assessment on Day 35 revealed: Akshar understands concepts (two pointers, hashmap, linked list) but CANNOT write working Java code from a blank page. Multiple syntax errors on basic programs (.length() vs .length, return from void, passing array instead of element).
+- Reddit research (5 threads, 300+ comments) confirmed the approach: Rebuild Technique, 15-minute struggle rule, compiler feedback is non-negotiable.
+
+### The new system (Phase 0.5 — Syntax Fluency Sprint):
+- **Code is written in `.java` files and RUN with `java filename.java`**
+- **NO more code in Markdown files**
+- Daily format: SRS (10 min) → Aptitude (20 min) → Code Sprint (40-60 min)
+- Each program is done 3 times: Guided (google OK) → Solo (no google) → Cold (from memory, under 5 min)
+- Only move to next program when current one passes Cold attempt
+
+### TCS Digital verified pattern (user googled Sept 22):
+- Q1: Easy-Medium (arrays, strings, math, patterns)
+- Q2: Medium-Hard (DP, Greedy, Sliding Window, Trees, Bit Manipulation)
+- This means Phase 2 MUST cover DP, Greedy, Trees — cannot skip them
+
+---
+
+## 4. CURRENT PROGRESS TRACKER
+
+### Current Phase: Phase 0.5 — Syntax Fluency Sprint
+### Start Date: TBD (as of Sept 22, 2026 — not yet started)
+
+| # | Program | Round 1 (Guided) | Round 2 (Solo) | Round 3 (Cold) | Status |
+|---|---------|:-:|:-:|:-:|--------|
+| 1 | FizzBuzz (1-50) | ⬜ | ⬜ | ⬜ | Not Started |
+| 2 | Find max in int[] array | ⬜ | ⬜ | ⬜ | Not Started |
+| 3 | Reverse a String (no library) | ⬜ | ⬜ | ⬜ | Not Started |
+| 4 | Palindrome check (two pointers) | ⬜ | ⬜ | ⬜ | Not Started |
+| 5 | Word frequency with HashMap | ⬜ | ⬜ | ⬜ | Not Started |
+| 6 | Second largest in array | ⬜ | ⬜ | ⬜ | Not Started |
+| 7 | Anagram check | ⬜ | ⬜ | ⬜ | Not Started |
+| 8 | Print primes 1-100 | ⬜ | ⬜ | ⬜ | Not Started |
+| 9 | Traverse singly linked list (ListNode) | ⬜ | ⬜ | ⬜ | Not Started |
+| 10 | Reverse singly linked list | ⬜ | ⬜ | ⬜ | Not Started |
+
+### Phase 1-3 Status: Not Started (starts after all 10 programs pass Cold)
+
+### Days 1-35 Status: COMPLETED (but in markdown-only format, not compiled)
+
+---
+
+## 5. Rules & Persona
+
+- **DO NOT** spoon-feed code. Problem statement + visual diagram only. He writes code from scratch.
+- **DO NOT** use emojis. Keep it clean, professional, realistic.
+- **DO NOT** introduce new concepts in SRS. SRS is ONLY for recalling previously learned syntax.
+- **DO NOT** assume he knows LeetCode-specific structures (ListNode, TreeNode) unless explicitly covered.
+- **DO** stamp Start/End times on daily files.
+- **DO** update the progress tracker table above after every session.
+- **DO** call out mistakes honestly. No sugarcoating.
+- **DO** make him run the code. If he pastes code without output, ask for compiler output.
+
+---
+
+## 6. Known Weaknesses (from live assessment)
+
+- `.length()` vs `.length` on arrays (recurring)
+- `words` vs `words[i]` — passes whole array instead of element
+- Forgets `System.out.println()` wrapper
+- `return true/false` from `void main()`
+- `.charAt()` is read-only — tries to assign to it
+- Puts print/return statements inside loops instead of after
+- Cannot write a basic for loop + if/else program in < 5 minutes without errors
+
+---
+
+## 7. Environment
+
+- Java 25 (OpenJDK) on Fedora Linux
+- `javac` NOT installed. Use `java filename.java` for single-file execution.
+- VS Code with Copilot (should be DISABLED during practice for accurate assessment)
+- Workspace: `/mnt/Storage/VS Code/WORKS/DSA-Mastery`
+- Obsidian Vault: `/mnt/Storage/Obsidian Vault/DSA/`
+
+---
+
+## 8. College Aptitude Class (Monday)
+
+- 2-hour class every Monday, instructor teaches new topic weekly.
+- Daily aptitude blocks (Tue-Sun) consolidate that week's topic.
+- Topics logged in `Quants_Formulas.md`.
+- Topics covered so far: Vedic Squaring (Yavadunam Rule), Calendar Odd Days, Birthday Riddle.

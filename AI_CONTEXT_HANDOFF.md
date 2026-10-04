@@ -49,14 +49,14 @@
 
 | # | Program | Round 1 (Guided) | Round 2 (Solo) | Round 3 (Cold) | Status |
 |---|---------|:-:|:-:|:-:|--------|
-| 1 | FizzBuzz (1-50) | ⬜ | ⬜ | ⬜ | Not Started |
-| 2 | Find max in int[] array | ⬜ | ⬜ | ⬜ | Not Started |
-| 3 | Reverse a String (no library) | ⬜ | ⬜ | ⬜ | Not Started |
-| 4 | Palindrome check (two pointers) | ⬜ | ⬜ | ⬜ | Not Started |
-| 5 | Word frequency with HashMap | ⬜ | ⬜ | ⬜ | Not Started |
-| 6 | Second largest in array | ⬜ | ⬜ | ⬜ | Not Started |
-| 7 | Anagram check | ⬜ | ⬜ | ⬜ | Not Started |
-| 8 | Print primes 1-100 | ⬜ | ⬜ | ⬜ | Not Started |
+| 1 | FizzBuzz (1-50) | ✅ | ✅ | ✅ (<4 min, no bugs) | DONE ✅ |
+| 2 | Find max in int[] array | ✅ | ✅ | ✅ | DONE ✅ |
+| 3 | Reverse a String (no library) | ✅ | ✅ | ✅ | DONE ✅ |
+| 4 | Palindrome check (two pointers) | ✅ | ✅ | ✅ (added toLowerCase) | DONE ✅ |
+| 5 | Word frequency with HashMap | ✅ | ✅ | ✅ | DONE ✅ |
+| 6 | Second largest in array | ✅ | ✅ | ✅ (dynamic input) | DONE ✅ |
+| 7 | Anagram check | ✅ | ✅ | ✅ (added toLowerCase) | DONE ✅ |
+| 8 | Print primes 1-100 | ✅ | ✅ | ✅ | DONE ✅ |
 | 9 | Traverse singly linked list (ListNode) | ⬜ | ⬜ | ⬜ | Not Started |
 | 10 | Reverse singly linked list | ⬜ | ⬜ | ⬜ | Not Started |
 
@@ -101,9 +101,37 @@
 
 ---
 
-## 8. College Aptitude Class (Monday)
+## 8. Session Initialization Rules
 
-- 2-hour class every Monday, instructor teaches new topic weekly.
-- Daily aptitude blocks (Tue-Sun) consolidate that week's topic.
+**At the START of every session, BEFORE doing anything else:**
+
+1. Check the current date and time.
+2. Always do: SRS → Aptitude → Code (in that order).
+
+**If it is Monday evening:**
+- ASK: "Did you have aptitude class today? What topic did they cover?"
+- Note the topic in DAILY_LOG.md and Quants_Formulas.md.
+- That week's aptitude blocks should consolidate the new topic.
+
+**If it is Thursday evening:**
+- ASK: "Did technical training happen today? Which programs did your faculty cover? What did he assign for next week?"
+- Note the programs in DAILY_LOG.md.
+- Assigned programs get added to the sprint/practice queue.
+
+**Reference Files (check these every session):**
+- Roadmap: `~/.gemini/antigravity/brain/<conv-id>/daily_plan.md`
+- LeetCode list: `/mnt/Storage/VS Code/WORKS/DSA-Mastery/LEETCODE_ROADMAP.md`
+- Aptitude list: `/mnt/Storage/Obsidian Vault/DSA/04_Aptitude/APTITUDE_ROADMAP.md`
+- Formula sheet: `/mnt/Storage/Obsidian Vault/DSA/04_Aptitude/Quants_Formulas.md`
+- Sprint tracker: This file (AI_CONTEXT_HANDOFF.md)
+- Daily log: `/mnt/Storage/VS Code/WORKS/DSA-Mastery/Sprint/DAILY_LOG.md`
+
+## 9. College Schedule
+
+- **Monday:** Aptitude class (2 hours). Instructor teaches new topic weekly.
+- **Thursday:** Technical training. Faculty assigns programs to learn by next week.
+- **Sunday 9 PM:** Weekly aptitude test deadline.
 - Topics logged in `Quants_Formulas.md`.
-- Topics covered so far: Vedic Squaring (Yavadunam Rule), Calendar Odd Days, Birthday Riddle.
+- Topics covered so far: Vedic Squaring, Calendar Odd Days, Calendar Code Method, Birthday Riddle.
+- Faculty programs: Swap (4 ways), Prime, Fibonacci, Palindrome, Armstrong.
+

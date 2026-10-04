@@ -20,21 +20,22 @@
 
 import java.util.*;
 
-class P7_AnagramCheck
-{
-    public static void  main(String[] args){
-        System.out.println("Enter the first string");
+class P7_AnagramCheck{
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first string");
         String first = sc.nextLine();
         System.out.println("Enter the second string");
         String second = sc.nextLine();
-        char[] arrA = first.toCharArray();
-        char[] arrB = second.toCharArray();
-        Arrays.sort(arrA);
-        Arrays.sort(arrB);
-        if(Arrays.equals(arrA,arrB))
+        first = first.toLowerCase();
+        second = second.toLowerCase();
+        char[] Farr = first.toCharArray();
+        char[] Sarr = second.toCharArray();
+        Arrays.sort(Farr);
+        Arrays.sort(Sarr);
+        if(Arrays.equals(Farr,Sarr))
         {
-            System.out.println("It is an anagram!");
+            System.out.println("It is an anagram");
         }
         else
         {

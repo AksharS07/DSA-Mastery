@@ -57,8 +57,8 @@
 | 6 | Second largest in array | ✅ | ✅ | ✅ (dynamic input) | DONE ✅ |
 | 7 | Anagram check | ✅ | ✅ | ✅ (added toLowerCase) | DONE ✅ |
 | 8 | Print primes 1-100 | ✅ | ✅ | ✅ | DONE ✅ |
-| 9 | Traverse singly linked list (ListNode) | ⬜ | ⬜ | ⬜ | Not Started |
-| 10 | Reverse singly linked list | ⬜ | ⬜ | ⬜ | Not Started |
+| 9 | Traverse singly linked list (ListNode) | ✅ | ✅ | ✅ | DONE ✅ |
+| 10 | Reverse singly linked list | ✅ | ✅ | ✅ | DONE ✅ |
 
 ### Phase 1-3 Status: Not Started (starts after all 10 programs pass Cold)
 
@@ -132,6 +132,6 @@
 - **Thursday:** Technical training. Faculty assigns programs to learn by next week.
 - **Sunday 9 PM:** Weekly aptitude test deadline.
 - Topics logged in `Quants_Formulas.md`.
-- Topics covered so far: Vedic Squaring, Calendar Odd Days, Calendar Code Method, Birthday Riddle.
+- Topics covered so far: Vedic Squaring, Calendar Odd Days, Calendar Code Method, Birthday Riddle, Directions & Shadow Problems (Oct 5).
 - Faculty programs: Swap (4 ways), Prime, Fibonacci, Palindrome, Armstrong.
 

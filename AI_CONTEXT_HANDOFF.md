@@ -60,7 +60,7 @@
 | 9 | Traverse singly linked list (ListNode) | ✅ | ✅ | ✅ | DONE ✅ |
 | 10 | Reverse singly linked list | ✅ | ✅ | ✅ | DONE ✅ |
 
-### Phase 1-3 Status: Not Started (starts after all 10 programs pass Cold)
+### Phase 1-3 Status: STARTED Phase 1. (LC #1, #217, #242 DONE. Next up: LC #125 Valid Palindrome).
 
 ### Days 1-35 Status: COMPLETED (but in markdown-only format, not compiled)
 
@@ -132,6 +132,6 @@
 - **Thursday:** Technical training. Faculty assigns programs to learn by next week.
 - **Sunday 9 PM:** Weekly aptitude test deadline.
 - Topics logged in `Quants_Formulas.md`.
-- Topics covered so far: Vedic Squaring, Calendar Odd Days, Calendar Code Method, Birthday Riddle, Directions & Shadow Problems (Oct 5).
+- Topics covered so far: Vedic Squaring, Calendar Odd Days, Calendar Code Method, Birthday Riddle, Directions & Shadow Problems (Oct 5), Profit & Loss Ratio Method (Oct 9).
 - Faculty programs: Swap (4 ways), Prime, Fibonacci, Palindrome, Armstrong.
 
